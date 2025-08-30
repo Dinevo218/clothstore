@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 :root {
-    --primary-color: #ff6f61;
+    --primary-color: #111111;
     --accent-color: #333;
     --background-color: #fafafa;
 }
@@ -321,4 +321,43 @@ footer {
     height: 50px;
     object-fit: cover;
     margin-right: 10px;
+}
+
+@media (max-width: 600px) {
+    .logo-search {
+        justify-content: center !important; /* Center all content in this section */
+        flex-wrap: wrap;
+        gap: 10px; /* Optional spacing if multiple elements wrap */
+    }
+
+    .logo-search .logo {
+        margin: 0 auto; /* Center the logo */
+        order: 0; /* Optional: ensure logo appears at top if wrapped */
+    }
+
+    /* Optionally hide or reposition elements like search and cart for mobile */
+    .search-form, 
+    .cart-sect {
+        flex-basis: 100%; /* Make them full width on mobile if needed */
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .logo-search {
+        justify-content: center !important;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .logo-search .logo {
+        margin: 0 auto;
+        order: 0;
+    }
+
+    .search-form, 
+    .cart-sect {
+        flex-basis: 100%;
+        text-align: center;
+    }
 }
