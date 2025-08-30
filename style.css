@@ -341,3 +341,24 @@ footer {
         text-align: center;
     }
 }
+
+@media (max-width: 600px) {
+    .logo-search {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center !important;
+        gap: 14px; /* Add some space between elements */
+        padding: 18px 0;
+    }
+    .logo {
+        margin: 0 auto;
+        display: block;
+    }
+    .search-form,
+    .cart-sect {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 8px;
+    }
+}
