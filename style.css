@@ -391,7 +391,7 @@ footer {
     .cart-sect {
          position: absolute !important; /* Ensure absolute */
         top: 18px;
-        right: 50px;
+        right: 200px;
         margin: 0;
         display: block; /* Ensure visible */
         transform: none !important; /* Remove any centering transform */
