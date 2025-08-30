@@ -362,3 +362,42 @@ footer {
         margin-bottom: 8px;
     }
 }
+
+/* Ensure .logo-search is relative positioning */
+.logo-search {
+    position: relative;
+}
+
+/* Cart button styling for desktop and mobile */
+.cart-sect {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+}
+
+/* On mobile, keep the cart button at top right and logo centered below */
+@media (max-width: 600px) {
+    .logo-search {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 0 18px 0; /* top padding increased to make space for cart */
+        justify-content: center !important;
+        gap: 14px;
+    }
+    .logo {
+        margin: 0 auto;
+        display: block;
+    }
+    .cart-sect {
+        position: absolute;
+        top: 18px;
+        right: 20px;
+        margin: 0;
+    }
+    .search-form {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 50px; /* Move search below logo and cart */
+    }
+}
