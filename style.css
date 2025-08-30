@@ -391,7 +391,7 @@ footer {
     .cart-sect {
         position: absolute;
         top: 18px;
-        right: 20px;
+        right: 0px;
         margin: 0;
     }
     .search-form {
