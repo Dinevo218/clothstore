@@ -389,10 +389,12 @@ footer {
         display: block;
     }
     .cart-sect {
-        position: absolute;
+         position: absolute !important; /* Ensure absolute */
         top: 18px;
-        right: 0px;
+        right: 20px;
         margin: 0;
+        display: block; /* Ensure visible */
+        transform: none !important; /* Remove any centering transform */
     }
     .search-form {
         width: 100%;
