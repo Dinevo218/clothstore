@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fashion Finds - Clothes Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top Header -->
+    <header class="top-header">
+        <div class="container">
+            <p>Free shipping on orders over ₹999!</p>
+            <ul class="header-links">
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Register</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Logo and Search Panel -->
+    <section class="logo-search">
+        <div class="container">
+            <img src="images/logo.png" alt="Fashion Finds Logo" class="logo">
+            <form class="search-form">
+                <input type="text" placeholder="Search products...">
+                <button type="submit">Search</button>
+            </form>
+            <ul class="cart-sect">
+                <li><a href="#"><span>Cart</span></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Main Navigation -->
+    <nav>
+        <ul class="main-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Kids</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Sale</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Welcome to Fashion Finds</h1>
+            <p>Discover the latest trends and exclusive collections!</p>
+            <a class="btn" href="#">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="product-list">
+        <div class="container">
+            <h2>Featured Products</h2>
+            <div class="products">
+                <div class="product-card">
+                    <img src="images/linen shirt.png" alt="Shirt">
+                    <h3>Classic Linen Shirt</h3>
+                    <p>₹1200</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/summer floral dress.png" alt="Dress">
+                    <h3>Summer Floral Dress</h3>
+                    <p>₹1400</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/blue denim jeans.png" alt="Jeans">
+                    <h3>Blue Denim Jeans</h3>
+                    <p>₹1600</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/kids t shirt.png" alt="Kids Wear">
+                    <h3>Kids' T-shirt</h3>
+                    <p>₹600</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <textarea placeholder="Your Message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Fashion Finds. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <!-- Cart Modal -->
+<div id="cartModal" class="cart-modal" style="display:none;">
+    <div class="cart-content">
+        <span id="closeCart" class="close-btn">&times;</span>
+        <h2>Your Cart</h2>
+        <ul id="cartItems"></ul>
+        <p><strong>Total: ₹<span id="cartTotal">0</span></strong></p>
+    </div>
+</div>
+
+</body>
+</html>

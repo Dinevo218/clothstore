@@ -1,0 +1,324 @@
+/* Reset & Variables */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: #ff6f61;
+    --accent-color: #333;
+    --background-color: #fafafa;
+}
+
+/* Typography */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: var(--background-color);
+    color: var(--accent-color);
+    line-height: 1.6;
+}
+
+/* Container Helper */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Top Header */
+.top-header {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 8px 0;
+    font-size: 0.95rem;
+}
+.top-header .header-links {
+    float: right;
+    list-style: none;
+}
+.top-header .header-links li {
+    display: inline;
+    margin-left: 15px;
+}
+.top-header .header-links a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Logo & Search Panel */
+.logo-search {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0;
+    border-bottom: 1px solid #eee;
+}
+.logo {
+    height: 50px;
+}
+.search-form input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.search-form button {
+    padding: 8px 18px;
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.cart-sect li {
+    display: inline;
+    margin-left: 15px;
+    font-weight: bold;
+}
+.cart-sect a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* Navigation */
+nav {
+    background: var(--primary-color);
+}
+.main-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+.main-menu li {
+    margin: 0 20px;
+}
+.main-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.07rem;
+    letter-spacing: 1px;
+    padding: 16px 0;
+    transition: color 0.2s;
+}
+.main-menu a:hover {
+    color: #fdd835;
+}
+
+/* Hero Section */
+.hero {
+    background: #ffe7e0;
+    text-align: center;
+    padding: 65px 0 45px 0;
+}
+.hero h1 {
+    font-size: 2.3rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 19px;
+}
+.hero .btn {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 12px 32px;
+    border-radius: 6px;
+    font-size: 1rem;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.hero .btn:hover {
+    background: #d84330;
+}
+
+/* Featured Products */
+.product-list {
+    padding: 45px 0 30px 0;
+}
+.product-list h2 {
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    justify-content: center;
+}
+.product-card {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    width: 235px;
+    padding: 18px;
+    text-align: center;
+    transition: box-shadow 0.2s;
+    box-shadow: 0 2px 7px rgba(0,0,0,0.03);
+}
+.product-card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+}
+.product-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+.product-card h3 {
+    margin-bottom: 8px;
+    font-size: 1.15rem;
+    font-weight: 500;
+}
+.product-card p {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.add-to-cart {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.97rem;
+    transition: background 0.15s;
+}
+.add-to-cart:hover {
+    background: #ff4a38;
+}
+
+/* Contact Section */
+.contact-section {
+    background: #fff3ea;
+    padding: 40px 0;
+}
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.contact-form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.contact-form input,
+.contact-form textarea {
+    padding: 9px;
+    border-radius: 5px;
+    border: 1px solid #ffd9c1;
+    font-size: 1rem;
+}
+.contact-form button {
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 0;
+    cursor: pointer;
+    font-size: 1.03rem;
+}
+.contact-form button:hover {
+    background: #d84330;
+}
+
+/* Footer */
+footer {
+    background: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 16px 0;
+    font-size: 1rem;
+    margin-top: 24px;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-card {
+        width: 290px;
+    }
+    .main-menu {
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 600px) {
+    .container {
+        padding: 0 6px;
+    }
+    .hero h1 {
+        font-size: 1.55rem;
+    }
+    .main-menu li {
+        margin: 0 9px;
+    }
+    .product-card {
+        width: 100%;
+        padding: 10px;
+    }
+    .contact-form {
+        max-width: 98%;
+    }
+}
+
+.cart-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right:0;
+    bottom:0;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+.cart-content {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    width: 320px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.3);
+    max-height: 80vh;
+    overflow-y: auto;
+}
+.close-btn {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+    font-weight: bold;
+}
+#cartItems {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+#cartItems li {
+    margin-bottom: 12px;
+    font-size: 1.05rem;
+}
+
+#cartItems li img {
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+}
