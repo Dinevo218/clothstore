@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 :root {
-    --primary-color: #ff6f61;
+    --primary-color: #040404;
     --accent-color: #333;
     --background-color: #fafafa;
 }
@@ -53,6 +53,7 @@ body {
     justify-content: space-between;
     padding: 18px 0;
     border-bottom: 1px solid #eee;
+    position: relative;
 }
 .logo {
     height: 200px;
@@ -80,6 +81,11 @@ body {
 .cart-sect a {
     color: var(--primary-color);
     text-decoration: none;
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    display: block;
+    transform: none !important;
 }
 
 /* Navigation */
@@ -110,7 +116,7 @@ nav {
 
 /* Hero Section */
 .hero {
-    background: #ffe7e0;
+    background: #4b4a49;
     text-align: center;
     padding: 65px 0 45px 0;
 }
@@ -119,6 +125,10 @@ nav {
     margin-bottom: 15px;
     font-weight: 700;
 }
+.hero h1 {
+    color: #000000 !important;
+}
+
 .hero p {
     font-size: 1.2rem;
     margin-bottom: 19px;
@@ -327,30 +337,14 @@ footer {
 
     /* Center logo on mobile */
     .logo-search {
-        justify-content: center !important;
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-    .logo-search .logo {
-        margin: 0 auto;
-        order: 0;
-    }
-    .search-form, 
-    .cart-sect {
-        flex-basis: 100%;
-        text-align: center;
-    }
-}
-
-@media (max-width: 600px) {
-    .logo-search {
         flex-direction: column;
         align-items: center;
         justify-content: center !important;
-        gap: 14px; /* Add some space between elements */
-        padding: 18px 0;
+        gap: 14px;
+        padding: 50px 0 18px 0; /* Adjusted for cart space */
+        position: relative;
     }
-    .logo {
+    .logo-search .logo {
         margin: 0 auto;
         display: block;
     }
@@ -361,45 +355,12 @@ footer {
         justify-content: center;
         margin-bottom: 8px;
     }
-}
-
-/* Ensure .logo-search is relative positioning */
-.logo-search {
-    position: relative;
-}
-
-/* Cart button styling for desktop and mobile */
-.cart-sect {
-    position: absolute;
-    top: 18px;
-    right: 20px;
-}
-
-/* On mobile, keep the cart button at top right and logo centered below */
-@media (max-width: 600px) {
-    .logo-search {
-        flex-direction: column;
-        align-items: center;
-        padding: 50px 0 18px 0; /* top padding increased to make space for cart */
-        justify-content: center !important;
-        gap: 14px;
-    }
-    .logo {
-        margin: 0 auto;
-        display: block;
-    }
     .cart-sect {
-         position: absolute !important; /* Ensure absolute */
+        position: absolute !important;
         top: 18px;
-        right: 150px;
+        right: 20px;
         margin: 0;
-        display: block; /* Ensure visible */
-        transform: none !important; /* Remove any centering transform */
-    }
-    .search-form {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-top: 50px; /* Move search below logo and cart */
+        display: block;
+        transform: none !important;
     }
 }
