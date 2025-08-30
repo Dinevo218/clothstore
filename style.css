@@ -329,7 +329,7 @@ footer {
     .logo-search {
         justify-content: center !important;
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 20px;
     }
     .logo-search .logo {
         margin: 0 auto;
